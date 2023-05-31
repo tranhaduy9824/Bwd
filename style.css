@@ -1,0 +1,821 @@
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover{
+    color:#5467e7 !important;
+}
+h2,
+h3,
+h4,
+h5{
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+*{
+    transition: all 0.3s ease-in-out    ;
+}
+img{
+    cursor: pointer !important;
+}
+.button{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #5467e7;
+    background-color: #fff;
+    color:#5467e7;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #5467e7;
+    color:#fff;
+}
+.free{
+    font-size: 0.75em;
+    color: rgba(128, 128, 128, 0.508) !important;
+    text-align: center;
+    margin-top: 5px;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    height: 5.8em;
+    position:fixed;
+    z-index: 99;
+    background: white;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+header .clicks-bar{
+    border: 0;
+    background: transparent;
+}
+header .clicks-bar:focus{
+    color: #5467e7;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header div:first-child{
+    display: flex;
+}
+.fa-bars{
+    margin-left: 20px;
+    margin-top: 8px;
+    font-size: 1.5em;
+    display: none;
+}
+header a img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+header a:last-child{
+    margin-right: 10px;
+}
+header a:last-child img{
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    cursor: pointer;
+}
+header .search{
+    width: 400px;
+    height: 35  px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background: #f7f6fb;
+    border:1px solid #848484;
+    position: relative;
+}
+header .search i{
+    position: absolute;
+    left: 8px;
+    top:10px;
+}
+header .search input{
+    border: 0;
+    background: #f7f6fb;
+    position: absolute;
+    left:32px;
+    top:8px;
+    height: 20px ;
+    width: 300px;
+}
+header input:focus-visible{
+    outline: 0;
+}
+header nav {
+    
+    padding-left: 50px;
+    width: auto;
+}
+header nav ul{
+    display: flex;
+    width: auto
+}
+header nav ul li{
+    list-style-type: none;
+    font-size: 1em;
+    width:auto;
+    padding:0 20px ;
+    cursor:pointer;
+    color:#757575;
+}
+
+header nav ul li:hover{
+    color:#5467e7;
+}
+.header{
+    height: 5.8em;
+    width: 100%;
+}
+/*           main          */
+.main{
+    display: flex;
+}
+/*                  aside             */
+.aside{
+    width: 200px;
+    height: 700px;
+    transition: all 0.3s ease-in-out;
+}
+aside{
+    background: white;
+    height: 900px;
+    max-height: 700px;
+    width:auto;
+    position: fixed;
+    left:0;
+    z-index: 99;
+    transition: all 0.3s ease-in-out
+}
+aside .app >div {
+    margin-left: 20px;  
+    background: #f1f4fd;
+    padding:10px 40px 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+aside .app>div span{
+    color: #5467e7;
+    font-weight: 500;
+    margin-left: 5px;
+    padding-top: 5px;
+}
+aside .app>div i{
+    font-size: 1.5em;
+    color: #5467e7;
+}
+aside .app ul{
+    margin:15px 0 0 70px ;
+
+}
+aside .app ul li{
+    color:#757575;
+}
+aside .app ul li:not(:last-child){
+    margin: 0 0 25px  0;
+   
+}
+aside .app ul li:hover{
+    color:#5467e7;
+    cursor: pointer;
+}
+aside .game{
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+    padding :10px 40px 10px 15px;
+    border-radius: 10px;
+}
+aside .game:hover{
+    background:#f1f4fd;
+    box-shadow: 0 -5px 10px -5px inset rgba(128, 128, 128, 0.237);
+}
+aside .game:hover i,
+aside .game:hover span{
+    color:#5467e7;
+}
+aside .game i{
+    font-size: 1.5em;
+    color:#848484;
+}
+aside .game span{
+    margin-left: 10px;
+    color:#848484
+}
+aside a img{
+    width: 160px;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0 0 10px 5px rgba(128, 128, 128, 0.188);
+}
+.content{
+    background: #f9f8fd;
+    border-radius: 10px;
+    margin:0 20px;
+    left:0;
+    width: calc(100% - 20px);
+    position:relative;
+    transition: all 0.3s ease-in-out;
+}
+
+/*  section         */
+section{
+    margin:20px;
+}
+section .slide {
+    display: flex;
+    flex-wrap: wrap;
+   
+    cursor: pointer;
+}
+section .slide *{
+    border-radius: 10px;
+}
+section .slide div{
+    width:66%;
+    min-height: 230px;
+    line-height: 1.5;
+    color:white; 
+    position: relative;
+}
+section .slide div .first{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+section .slide .slide-first h2:hover{
+    color:white;
+}
+section .slide .second h2:hover{
+    color:black;
+}
+section .slide div #first1{
+    z-index: 1 ;
+    background: bottom right  / auto no-repeat url("./img/Converted.png"), #7571df;
+}   
+section .slide div #first2{
+    background: bottom right / auto no-repeat url("./img/Converted-1.png"), #7571df;
+    z-index: 0;
+}
+section .slide div button{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom:10px;
+    border: 0;
+    right:calc(50% - 10px );
+    background: #dcdbf3;
+    z-index: 2;
+}
+section .slide div #click-1 {
+    right: calc(50% + 10px) ;
+    background: #fff;
+}
+section .slide span *{
+    margin: 20px 0 0 20px;
+    width: 45%;
+    word-wrap: break-word;
+}
+section .slide span a{
+    display: block;
+    text-decoration: none;
+    color:#5467e7;
+}
+section .slide span a:active    {
+    color:#5467e7;
+}
+section .slide .second{
+    width: 31%;
+    min-height: 200px ;
+    margin-left: 20px;
+    background: bottom right /auto no-repeat url("./img/banner-guide.png"), #fecfd1;
+}
+/*    section update      */
+section #update ul{
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap:wrap
+}
+section #update ul li{
+    display:flex;
+    margin-left: 20px;
+    width: 30%;
+}
+section #update ul li>*{
+    margin:10px;
+}
+section #update ul li .update-content{
+    width: 50%; 
+}
+section #update ul li img{
+    width:50px;
+    cursor: pointer;
+}
+section #update ul li .update-content p{
+    font-size: 0.75em;
+    color: rgba(128, 128, 128, 0.622);
+}
+section #update ul li .update-contact button{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #5467e7;
+    background-color: #fff;
+    color:#5467e7;
+    font-weight: 600;
+    cursor: pointer;
+}
+section #update ul li .update-contact button:hover{
+    background-color: #5467e7;
+    color:#fff;
+}
+    
+section #update ul li .update-contact p{
+    font-size: 0.75em;
+    color: rgba(128, 128, 128, 0.797);
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*  section for macOS */
+#app-macOS{
+    display: flex;
+}
+section article{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(50% - 40px );
+    margin: 0 20px;
+}
+section article .head{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px ;
+}
+section article .head div:nth-child(2){
+    display: flex;
+}
+section article .head a{
+    text-decoration: none ;
+    color:#5467e7;  
+}
+section article .app-for-macOS{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+section article .app-for-macOS li{
+    list-style-type: none;
+    flex:0 0 calc(50% - 20px)   ;
+    height: 200px;
+    background: #fff;
+    margin:20px 8px 0 0;
+    border-radius: 10px;
+
+}
+
+section article .app-for-macOS .thumnail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #e5e8f8;
+    height: 80px;
+    border-radius: 10px 10px 0 0 ;
+}
+section article .app-for-macOS .thumnail>*{
+    margin:20px 10px 0 20px;
+}
+section article .app-for-macOS .thumnail img{
+    width: 50px;
+    height: 50px;
+}
+section article h5{
+    width: 100%;
+    height: 20px;
+}
+section article .app-for-macOS .thumnail span button{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #5467e7;
+    background-color: #fff;
+    color:#5467e7;
+    font-weight: 600;
+    cursor: pointer;
+}
+section article .app-for-macOS .thumnail span button:hover{
+    background-color: #5467e7;
+    color:#fff;
+}
+section article .app-for-macOS .thumnail span p{
+    text-align: center;
+}
+section article .app-for-macOS li div:not(:first-child){
+    margin: 10px 20px 0 20px;
+    height: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.389);
+}
+section article .app-for-macOS li div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+}
+section article .app-for-macOS p{
+    margin-top: 5px;
+    font-size: 0.6em;
+    color: rgba(128, 128, 128, 0.719);
+    
+}
+section article .tutorial-thumnail p:first-child{
+    font-size: 1.3em;
+    color:#2b3561;
+}
+section article .tutorial-thumnail>*{
+    margin:30px 0 0 20px;
+}
+section article .tutorial-thumnail p:last-child{
+    font-size: 0.8em;
+    color:rgba(128, 128, 128, 0.659);
+    margin:20px;
+    
+}
+section article .tutorial-thumnail{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background: bottom right /230px 180px no-repeat url("./img/Teamwork-and-Startup.png") , #ffec88;
+    border-radius: 10px;
+}
+section #app-montage div img{
+    width: 50px;
+    height: 50px;
+}
+section #app-montage .app-montage {
+    display: flex;  
+    width: 100%;
+    margin-top: 20px;  
+    justify-content: space-between;
+    margin: 40px 0;
+}
+section #app-montage .app-montage p{
+    font-size: 0.75em;
+    color: rgba(128, 128, 128, 0.547);
+}
+section #app-montage .montage-content{
+    flex:2 0 50%;
+    margin-left: 10px;
+}
+
+/* section problem   */
+#problem ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#problem ul li{
+    list-style-type: none;
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 0 10px;
+}
+#problem ul li *{
+    margin:10px 0;
+}
+#problem ul li img{
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    object-fit:cover;
+}
+#problem ul li p{
+    font-size: 0.75em;
+    color:rgba(128, 128, 128, 0.508);
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title a{
+    text-decoration: none;
+    color:#5467e7;
+}
+#new-game .game-content{
+    display: flex;
+}
+#new-game .metro{
+   
+    height: 600px;
+    border-radius: 10px;
+    position: relative;
+    background:top center / cover no-repeat url("./img/metro.jpg");
+}
+#new-game .action{
+    top:60%;
+    left:20px;
+    height: 20px;
+    position: absolute;
+    border: 0; 
+    color: rgba(128, 128, 128, 0.589); 
+    font-weight: 100;
+    box-shadow: 0 2px 6px -4px gray;
+}
+#new-game .action:hover{
+    color: #fff;
+}
+#new-game .metro h2{
+    top:70%;
+    color:white;
+    left:20px;
+    position: absolute;
+}
+#new-game .metro div {
+    bottom:5%;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin:0 5%;
+}   
+#new-game .metro div span button{
+    width: 100px;
+}
+#new-game .metro div span:first-child {
+    color: rgba(255, 255, 255, 0.636) !important; 
+    display: flex;
+    align-items: center;
+    
+}
+#new-game .metro div span .free{
+    color: rgba(255, 255, 255, 0.636) !important; 
+}
+#new-game .name-game-content{
+    width: 100%;
+}
+#new-game .name-game-content span{
+    margin:10px 0;
+}
+#new-game ul {
+    flex:1 0 50%;
+}
+#new-game ul li{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin: 0 0 60px 20px;
+    border-radius: 10px;
+}
+#new-game ul li img{
+    max-width: 40%;
+    object-fit:fill;
+    height: 160px;
+    flex: 1 0 30%;
+    border-radius: 10px;
+
+}
+#new-game ul li .name-game *{
+    margin:20px 10px 0 20px;
+}
+#new-game ul li .name-game span{
+    color:rgba(128, 128, 128, 0.611);
+    font-size: 0.75em;
+    margin: 0;
+}
+#new-game ul li .button-show{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+#new-game ul li .button-show *{
+    margin: 0 5px;
+}
+#new-game ul li .button-show p{
+    flex:1;
+    font-size: 0.75em;
+    color:rgba(128, 128, 128, 0.59)
+}
+#new-game ul li .kind{
+    width: 120px;
+    border: 0;
+    color: gray;
+    font-weight: 100;
+    font-size: 0.75em;
+    box-shadow: 0 3px 4px -3px gray;
+    
+}
+#new-game ul li .kind:hover{
+    color: white;
+}
+
+/*   bestgame     */
+#bestgame ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#bestgame ul li{
+    margin:20px 20px 0 0    ;
+    flex: 0 0 calc(33.3333% - 20px);
+    list-style-type: none;
+    flex:0 0 calc(33% - 20px );
+}
+#bestgame ul li *{
+    margin:0 0 20px 0;
+}
+#bestgame ul li .img1{
+    width: 100%;
+    background: center / 100% 100% no-repeat url('./img/Farm\ together.png');
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+#bestgame ul li .img2{
+    width: 100%;
+    background: center / 100% 100% no-repeat url('./img/Pacman.jpg');
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+#bestgame ul li .img3{
+    width: 100%;
+    background: center / 100% 100% no-repeat url('./img/Euro\ truck.jpg');
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+}
+#bestgame ul li .bestgame-img i{
+    font-size: 2.3em;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+   cursor: pointer;
+
+}
+#bestgame ul li .bestgame-img::before{
+   content: "";
+   width: 20%;
+   height: 30%;
+   border-radius: 100%;
+   position: absolute;
+   left:50%;
+   top:50%;
+   transform: translate(-55%,-50%);
+   background: rgba(0, 0, 0,0.8);
+   z-index: -1;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+
+}
+#bestgame ul li .bestgame-img::after{
+   content: "";
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left:0;
+   top:0;
+   border-radius: 10px;
+   background: rgba(0, 0, 0, 0.396);
+   z-index: -1;
+   transition: all 0.2s ease-in-out;
+   cursor: pointer;
+}
+#bestgame ul li .bestgame-img:hover{
+    
+}
+#bestgame ul li .bestgame-img:hover::after{
+    z-index: 1;
+}
+#bestgame ul li .bestgame-img:hover i,
+#bestgame ul li .bestgame-img:hover::before{
+    z-index: 2;
+}
+#bestgame .name-game{
+    font-weight: 700;
+    cursor: pointer;
+}
+#bestgame .name-game:hover{
+    color: #5467e7;
+}
+#bestgame .date-game{
+    font-size: 0.75em;
+    color: rgba(128, 128, 128, 0.59);
+}
+#bestgame .button{
+    width: auto;
+    padding: 0 10px;
+    color:rgba(128, 128, 128, 0.599);
+    font-weight: 100;
+    border:0;
+    box-shadow: 0 2px 4px -3px gray ;
+}
+#bestgame .bestgame-content ul li img:hover{
+    background: rgba(0, 0, 0 );
+}
+#bestgame .button:hover{
+    color:white;
+}
+
+/*  footer */
+footer{
+    text-align: center;
+    height: 50px;
+}
+/*  screen      */
+@media only screen and (min-width:1131px) and  (  max-width : 1600px){
+    .aside{
+        width: 200px;
+    }
+    aside{
+        left: 0 !important ;
+    }
+    .content{
+        left: 0 !important;
+    }
+    #new-game .metro{
+        flex:1 0 50%;
+    }
+}
+@media only screen and ( max-width : 1130px){
+
+    .slide-first{
+        width: 100% !important;
+    }
+    .second{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #update ul li{
+        flex:0 0 45%;
+    }
+    #app-macOS{
+        flex-direction: column;
+    }
+    .aside{
+        width: 0;
+    }
+    aside{
+        left: -250px ;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .search{
+        display: none;
+    }
+    nav ul li{
+        display: none;
+    }
+    .content{
+        position: absolute;
+    }
+    .game-content{
+        flex-direction: column;
+    }
+    .game-content .metro{
+        margin-bottom: 20px;
+    }
+    #bestgame ul li{
+        flex:0 0 40%;
+    }
+}
+@media only screen and (max-width:750px){
+    #update ul li{
+        flex:0 0 100%;
+    }
+    #app-macOS ul li{
+        flex:0 0 100%;
+    }
+    .content{
+        position: absolute;
+    }
+    h2,
+    h3,
+    h4,
+    h5{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.6em;
+    }
+    #bestgame ul li{
+        flex:0 0 100%;
+    }
+}
